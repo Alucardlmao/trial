@@ -1,0 +1,67 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+body {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    background-color: white;
+}
+
+/* Styles for scrollbar */
+::-webkit-scrollbar {
+    width: 6px; /* Set width of the scrollbar */
+}
+
+/* Handle for vertical scrollbar */
+::-webkit-scrollbar-thumb {
+    background: rgba(0, 0, 0, 0.5); /* Set color of the scrollbar handle */
+    border-radius: 3px; /* Set border radius of the scrollbar handle */
+}
+
+/* Track for vertical scrollbar */
+::-webkit-scrollbar-track {
+    background: rgba(0, 0, 0, 0.1); /* Set color of the scrollbar track */
+}
+
+/* Handle for horizontal scrollbar */
+::-webkit-scrollbar-thumb:horizontal {
+    background: rgba(0, 0, 0, 0.5); /* Set color of the scrollbar handle */
+    border-radius: 3px; /* Set border radius of the scrollbar handle */
+}
+
+/* Track for horizontal scrollbar */
+::-webkit-scrollbar-track:horizontal {
+    background: rgba(0, 0, 0, 0.1); /* Set color of the scrollbar track */
+}
+
+/* Change opacity on hover for both vertical and horizontal scrollbar */
+::-webkit-scrollbar-thumb:hover,
+::-webkit-scrollbar-thumb:horizontal:hover {
+    background: rgba(0, 0, 0, 0.8); /* Change handle opacity on hover */
+}
+
+.header-gradient {
+    background-image: radial-gradient(
+        107.23% 53.01% at 50% 46.99%,
+        rgba(180, 180, 180, 0.17) 0%,
+        rgba(191, 191, 191, 0.33) 100%
+    );
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center center;
+}
+.sidebar-active {
+    background-color: #33496f;
+    border: 1px solid #c8c8c8;
+    color: #ffffff;
+}
+
+.slick-arrow.slick-next {
+    top: 23% !important;
+}
+
+.slick-arrow.slick-prev {
+    top: 23% !important;
+}
